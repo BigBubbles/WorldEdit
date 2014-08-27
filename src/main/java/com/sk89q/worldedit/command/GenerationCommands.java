@@ -73,7 +73,7 @@ public class GenerationCommands {
         min = 2,
         max = 3
     )
-    @CommandPermissions("worldedit.generation.cylinder")
+    @CommandPermissions("worldedit.generation.hcylinder")
     @Logging(PLACEMENT)
     public void hcyl(Player player, LocalSession session, EditSession editSession, Pattern pattern, String radiusString, @Optional("1") int height) throws WorldEditException {
         cyl(player, session, editSession, pattern, radiusString, height, true);
@@ -133,7 +133,7 @@ public class GenerationCommands {
         min = 2,
         max = 3
     )
-    @CommandPermissions("worldedit.generation.sphere")
+    @CommandPermissions("worldedit.generation.hsphere")
     @Logging(PLACEMENT)
     public void hsphere(Player player, LocalSession session, EditSession editSession, Pattern pattern, String radiusString, @Optional("false") boolean raised) throws WorldEditException {
         sphere(player, session, editSession, pattern, radiusString, raised, true);
@@ -224,7 +224,7 @@ public class GenerationCommands {
             min = 2,
             max = 3
     )
-    @CommandPermissions("worldedit.generation.pyramid")
+    @CommandPermissions("worldedit.generation.hpyramid")
     @Logging(PLACEMENT)
     public void hollowPyramid(Player player, LocalSession session, EditSession editSession, Pattern pattern, @Range(min = 1) int size, boolean raised) throws WorldEditException {
         pyramid(player, session, editSession, pattern, size, raised,true);
@@ -393,7 +393,7 @@ public class GenerationCommands {
             min = 2,
             max = 3
     )
-    @CommandPermissions("worldedit.generation.cube")
+    @CommandPermissions("worldedit.generation.hcube")
     @Logging(PLACEMENT)
     public void cube(Player player, LocalSession session, EditSession editSession, Pattern pattern, String radiusString, @Optional("false") boolean raised) throws WorldEditException {
         cube(player, session, editSession, pattern, radiusString, raised, true);
