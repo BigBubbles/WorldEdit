@@ -383,7 +383,7 @@ public class GenerationCommands {
     }
     @Command(
             aliases = { "/hcube", "/hc" },
-            usage = "<block> <length>[,<width>,<height>] [raised?]",
+            usage = "<block> <length>[,<height>,<width>] [raised?]",
             desc = "Generates a hollow cube.",
             help =
                     "Generates a hollow cube.\n" +
@@ -400,7 +400,7 @@ public class GenerationCommands {
     }
     @Command(
             aliases = { "/cube", "/c" },
-            usage = "<block> <length>[,<width>,<height>] [raised?]",
+            usage = "<block> <length>[,<height>,<width>] [raised?]",
             flags = "h",
             desc = "Generates a filled cube.",
             help =
